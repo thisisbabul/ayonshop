@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/dashboardcommon">
+
+<head>
+
+<title>Dashboard</title>
+
+
+<!-- Make sure to close the angle bracket  -->
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="w3-container" style="margin-top: 80px" id="showcase">
+			<h1 class="w3-jumbo">
+				<b>Total Products Sold: 500</b>
+			</h1>
+			<h1 class="w3-xxxlarge w3-text-red">
+				<b>Top 5 Profitable products</b>
+			</h1>
+			<hr style="width: 100%; border: 5px solid red" class="w3-round">
+		</div>
+		<!-- The Team -->
+		<div class="w3-row-padding w3-grayscale">
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<div class="w3-container">
+						<h3>Product Name</h3>
+						<p class="w3-opacity">Price</p>
+						<p>Product Type</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<div class="w3-container">
+						<h3>Product Name</h3>
+						<p class="w3-opacity">Price</p>
+						<p>Product Type</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col m4 w3-margin-bottom">
+				<div class="w3-light-grey">
+					<div class="w3-container">
+						<h3>Product Name</h3>
+						<p class="w3-opacity">Price</p>
+						<p>Product Type</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/main">
+
+<head>
+
+<title>Login</title>
+
+
+<!-- Make sure to close the angle bracket  -->
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div id="contact" class="container-fluid bg-grey">
+			<h2 class="text-center">LOGIN</h2>
+			<div class="row">
+				<div class="col-sm-5">
+				</div>
+				<div class="col-sm-7">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" name="email"
+								placeholder="Email" type="email" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="password" name="password"
+								placeholder="Password" type="password" required>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-default pull-right" type="submit">Login</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

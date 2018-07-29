@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/dashboardcommon">
+
+<head>
+
+<title>Dashboard</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Make sure to close the angle bracket  -->
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="container">
+			<h2>All Products</h2>
+
+			<a href="#" th:href="@{/addproduct}">add product</a>
+			<table class="table table-bordered" style="width: 800px; margin-top: 10px;">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Profit Percentage</th>
+						<th>Product Type</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>ASUS15</td>
+						<td>15000</td>
+						<td>20%</td>
+						<td>MOTHERBOARD</td>
+						<td><a href="#" th:href="@{/updateproduct}">update</a> | <a href="#" th:href="@{/deleteproduct}">Delete</a></td>
+					</tr>
+					<tr>
+						<td>ASUS15</td>
+						<td>15000</td>
+						<td>20%</td>
+						<td>MOTHERBOARD</td>
+						<td><a href="#" th:href="@{/updateproduct}">update</a> | <a href="#" th:href="@{/deleteproduct}">Delete</a></td>
+					</tr>
+					<tr>
+						<td>ASUS15</td>
+						<td>15000</td>
+						<td>20%</td>
+						<td>MOTHERBOARD</td>
+						<td><a href="#" th:href="@{/updateproduct}">update</a> | <a href="#" th:href="@{/deleteproduct}">Delete</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

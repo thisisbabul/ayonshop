@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout/dashboardcommon">
+
+<head>
+
+<title>Dashboard</title>
+
+
+<!-- Make sure to close the angle bracket  -->
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="w3-container" id="contact" style="margin-top: 75px">
+			<h1 class="w3-xxxlarge w3-text-red">
+				<b>Update Product</b>
+			</h1>
+			<hr style="width: 100%; border: 5px solid red" class="w3-round">
+
+			<form action="/action_page.php" target="_blank">
+				<div class="w3-section">
+					<label>Name</label> <input class="w3-input w3-border" type="text"
+						name="Name" required>
+				</div>
+				<div class="w3-section">
+					<label>Price</label> <input class="w3-input w3-border"
+						type="number" name="price" required>
+				</div>
+				<div class="w3-section">
+					<label>Profit Percentage</label> <input class="w3-input w3-border"
+						type="number" name="profitpercentage," required>
+				</div>
+				<div class="w3-section">
+					<label>Product Type</label> <select class="w3-input w3-border"
+						style="width: 100%;">
+						<option value="0">Select Product Type:</option>
+						<option value="1">RAM</option>
+						<option value="2">MOTHERBOARD</option>
+						<option value="3">GRAPHICS CARD</option>
+					</select>
+				</div>
+				<button type="submit"
+					class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Update Product</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
